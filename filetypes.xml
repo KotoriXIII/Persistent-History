@@ -1,0 +1,10 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping ext="nbs" type="Native" />
+      <mapping pattern="settings.yml" type="YAML" />
+      <mapping pattern=".yml" type="YAML" />
+      <mapping ext="y" type="YAML" />
+    </extensionMap>
+  </component>
+</application>
