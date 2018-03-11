@@ -3,6 +3,7 @@ package com.github.kotorixiii;
 import com.github.kotorixiii.calendar.*;
 import com.xxmicloxx.NoteBlockAPI.NoteBlockPlayerMain;
 import org.bukkit.Bukkit;
+import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
@@ -33,6 +34,9 @@ public class PersistentHistory extends JavaPlugin {
         plugin = this;
         pdFile = this.getDescription();
 
+        CommandSender console = Bukkit.getConsoleSender();
+        Bukkit.dispatchCommand(console, "gamerule doDaylightCycle false");
+
         calendarFiles = new CalendarFiles();
         calendarFiles.buildCalendar();
         pCalendar = new PCalendar(calendarFiles.getCalendar(), calendarFiles.getTicks());
@@ -54,6 +58,7 @@ public class PersistentHistory extends JavaPlugin {
 
         logger.info(pdFile.getName() + " has been successfully disabled on the server.");
     }
+
 
     public void registerCommands() {
 
