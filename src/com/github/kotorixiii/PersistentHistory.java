@@ -12,6 +12,9 @@ import java.util.logging.Logger;
 
 public class PersistentHistory extends JavaPlugin {
 
+    //Testing this commit message.
+
+
     public static Plugin plugin;
     public static Logger logger;
     public static PluginDescriptionFile pdFile;
