@@ -1,0 +1,15 @@
+name: PersistentHistory
+main: com.github.kotorixiii.PersistentHistory
+author: KotoriXIII
+version: 1.0
+commands:
+  cal:
+    usage:
+    description:
+  calendar:
+    usage:
+    description:
+permissions:
+  phistory.calendar.admin:
+    description:
+
