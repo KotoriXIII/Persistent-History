@@ -1,0 +1,17 @@
+name: PHistoryCore
+main: us.persistenthistory.PersistentHistory
+author: PersistentHistory
+version: 1.0
+load: STARTUP
+depend: [NoteBlockAPI]
+commands:
+  cal:
+    usage:
+    description:
+  calendar:
+    usage:
+    description:
+permissions:
+  phistory.calendar.admin:
+    description:
+
